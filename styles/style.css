@@ -1,0 +1,37 @@
+.box{
+    width: 500px;
+    height: 500px;
+    /* position: relative;
+    float: left; */
+    position: absolute;
+}
+.view{
+    background-color: yellow;
+}
+.add{
+    background-color: green;
+    visibility: hidden;
+}
+.edit{
+    background-color:purple;
+    visibility: hidden;
+}
+.delete{
+    background-color: blue;
+    visibility: hidden;
+}
+.search{
+    background-color:orange;
+    visibility: hidden;
+}
+
+.view table{
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.view table tr , .view table td , .view table th{
+    border: 1px solid black;
+    width: 100px;
+    height: 50px;
+}
