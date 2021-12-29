@@ -1,10 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 .box{
-    width: 500px;
+    width: 600px;
     height: 500px;
     /* position: relative;
     float: left; */
     position: absolute;
+    margin-left: 22%;
 }
+.buttons{
+    width: 800px;
+    height: 20px;
+    margin: 0px auto;
+}
+.buttons button{
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+}
+
 .view{
     background-color: yellow;
 }
