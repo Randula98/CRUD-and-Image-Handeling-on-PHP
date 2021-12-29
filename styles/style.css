@@ -2,13 +2,31 @@
     padding: 0;
     margin: 0;
 }
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 .box{
-    width: 600px;
+    width: 1000px;
     height: 500px;
     /* position: relative;
     float: left; */
     position: absolute;
-    margin-left: 22%;
+    margin-left: 15%;
+}
+.container{
+    position: relative;
+    min-height: 100px;
+    padding-bottom: 2.5rem; 
+    height: auto;
+}
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    margin-top: auto;
+    position: relative
 }
 .buttons{
     width: 800px;
@@ -23,6 +41,7 @@
 
 .view{
     background-color: yellow;
+    height: auto;
 }
 .add{
     background-color: green;
@@ -41,7 +60,7 @@
     visibility: hidden;
 }
 
-.view table{
+/* .view table{
     border-collapse: collapse;
     margin-top: 20px;
     margin-left: 20px;
@@ -50,4 +69,38 @@
     border: 1px solid black;
     width: 100px;
     height: 50px;
+} */
+
+/* .imgbox{
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+    position: relative;
+    float: right;
+    right: 100px;
+}
+.imgbox img{
+    width: 400px;
+    height: 400px;
+} */
+
+.viewbox{
+    width: 300px;
+    height: 400px;
+    border: 1px solid black;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    float: left;
+}
+.viewbox:last-child
+{
+    margin-bottom: 40px;
+}
+
+.plate{
+    width: 100%;
+    height: 50px;
+    background-color: blue;
 }

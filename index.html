@@ -1,45 +1,71 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Home</title>
-        <link rel="stylesheet" href="styles/style.css">
-        
-    </head>
-    <body onload="view()">
-        <script src="scripts/script.js"></script>
-        <div class = "buttons">
-            <button onclick = "view()">View</button>
-            <button onclick = "add()">Add</button>
-            <button onclick = "edit()">Edit</button>
-            <button onclick = "del()">Delete</button>
-            <button onclick = "search()">Search</button>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body onload="view()">
+    <script src="scripts/script.js"></script>
+    <div class="container">
+        <div class="buttons">
+            <button onclick="view()">View</button>
+            <button onclick="add()">Add</button>
+            <button onclick="edit()">Edit</button>
+            <button onclick="del()">Delete</button>
+            <button onclick="search()">Search</button>
         </div><br>
-        <div class = "view box" id = "view">
-            <table>
-                <tr>
-                    <th></th><th></th><th></th>
-                </tr>
-                <tr>
-                    <td></td><td></td><td></td>
-                </tr>
-            </table>
+        <div class="view box" id="view">
+            <!-- <table>
+                    <tr>
+                        <th></th><th></th><th><button>View Image</button></th>
+                    </tr>
+                    
+                </table> -->
+
+            <div class="viewbox">
+
+            </div>
+            <div class="viewbox">
+
+            </div>
+            <div class="viewbox">
+
+            </div>
+
+            <div class="viewbox">
+
+            </div>
+            <div class="viewbox">
+
+            </div>
+            <div class="viewbox">
+
+            </div>
+            
+
 
         </div>
 
-        <div class = "add box" id = "add">
-
-        </div>
-        
-        <div class = "edit box" id = "edit">
+        <div class="add box" id="add">
 
         </div>
 
-        <div class = "delete box" id = "delete">
+        <div class="edit box" id="edit">
 
         </div>
 
-        <div class = "search box" id = "search">
+        <div class="delete box" id="delete">
 
         </div>
-    </body>
+
+        <div class="search box" id="search">
+
+        </div>
+
+    </div>
+</body>
+
 </html>
