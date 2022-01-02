@@ -1,20 +1,5 @@
 <?php
     include "config.php";
-
-    $sql = "SELECT * FROM student";
-    $result = $conn->query($sql)
-
-    // if($result = $conn->query($sql))
-    // {
-    //     $row = $result->fetch_assoc();
-
-    //     $id = $row['studentID'];
-    //     $name = $row['studentName'];
-    //     $age = $row['studentAge'];
-    //     $address = $row['studentAddress'];
-    //     $image = $row['imgLoc'];
-    // }
-
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +8,11 @@
 <head>
     <title>Home</title>
     <link rel="stylesheet" href="styles/style.css">
+    <style>
+        td {
+        text-align: center;   
+        }
+    </style>
 
 </head>
 
@@ -57,7 +47,18 @@
                                 $image = $row['imgLoc'];
                                
                                 echo '<tr><td>'.$id.'</td><td>'.$name.'</td><td>'.$age.'</td><td>'.$address.'</td>';
-                                echo '</tr>';
+                                if ($image == NULL)
+                                {
+                                    echo '<td><h4>No<br>Image</h4></td></tr>';
+                                }
+                                else
+                                {
+                                    echo'<td>';
+                                    echo'<img src="'.$image.'" alt="" style = "width:50px; height:50px; margin-top:5px;">';
+                                    //echo $image;
+                                    echo'</td></tr>';
+                                }
+                                
                            }
                        }
 
@@ -66,9 +67,8 @@
                     ?>
                     
                 </table>
-
-            
-
+                
+                
 
         </div>
 
