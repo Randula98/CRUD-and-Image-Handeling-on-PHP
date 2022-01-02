@@ -1,3 +1,22 @@
+<?php
+    include "config.php";
+
+    $sql = "SELECT * FROM student";
+    $result = $conn->query($sql)
+
+    // if($result = $conn->query($sql))
+    // {
+    //     $row = $result->fetch_assoc();
+
+    //     $id = $row['studentID'];
+    //     $name = $row['studentName'];
+    //     $age = $row['studentAge'];
+    //     $address = $row['studentAddress'];
+    //     $image = $row['imgLoc'];
+    // }
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -20,8 +39,31 @@
         <div class="view box" id="view">
             <table>
                     <tr>
-                        <th>1</th><th>2</th><th>3</th><th>4</th><th><button>View Image</button></th>
+                        <th>Student ID</th><th>Student Name</th><th>Student Address</th><th>Student Contact</th><th>Image</th>
                     </tr>
+                    <?php
+
+                       $sql = "SELECT * FROM student";
+                       $result = $conn->query($sql);
+
+                       if ($result -> num_rows > 0)
+                       {
+                           while($row = $result->fetch_assoc())
+                           {
+                                $id = $row['studentID'];
+                                $name = $row['studentName'];
+                                $age = $row['studentAge'];
+                                $address = $row['studentAddress'];
+                                $image = $row['imgLoc'];
+                               
+                                echo '<tr><td>'.$id.'</td><td>'.$name.'</td><td>'.$age.'</td><td>'.$address.'</td>';
+                                echo '</tr>';
+                           }
+                       }
+
+
+                    
+                    ?>
                     
                 </table>
 
@@ -50,3 +92,6 @@
 </body>
 
 </html>
+
+
+<!-- <button>View Image</button> -->
