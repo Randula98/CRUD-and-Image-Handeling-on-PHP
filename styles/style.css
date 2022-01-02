@@ -104,3 +104,16 @@ body{
     height: 50px;
     background-color: blue;
 }
+
+table , tr , td , th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td , th{
+    width: 100px;
+    height: 50px;
+}
+table{
+    margin: 30px;
+    /* margin-left: 50px; */
+}

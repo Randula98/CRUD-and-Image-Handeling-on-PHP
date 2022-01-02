@@ -18,32 +18,13 @@
             <button onclick="search()">Search</button>
         </div><br>
         <div class="view box" id="view">
-            <!-- <table>
+            <table>
                     <tr>
-                        <th></th><th></th><th><button>View Image</button></th>
+                        <th>1</th><th>2</th><th>3</th><th>4</th><th><button>View Image</button></th>
                     </tr>
                     
-                </table> -->
+                </table>
 
-            <div class="viewbox">
-
-            </div>
-            <div class="viewbox">
-
-            </div>
-            <div class="viewbox">
-
-            </div>
-
-            <div class="viewbox">
-
-            </div>
-            <div class="viewbox">
-
-            </div>
-            <div class="viewbox">
-
-            </div>
             
 
 
