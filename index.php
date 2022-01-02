@@ -29,7 +29,7 @@
         <div class="view box" id="view">
             <table>
                     <tr>
-                        <th>Student ID</th><th>Student Name</th><th>Student Address</th><th>Student Contact</th><th>Image</th>
+                        <th>Student ID</th><th>Student Name</th><th>Student Age</th><th>Student Address</th><th>Image</th>
                     </tr>
                     <?php
 
