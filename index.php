@@ -58,12 +58,8 @@
                                     //echo $image;
                                     echo'</td></tr>';
                                 }
-                                
                            }
-                       }
-
-
-                    
+                       }                   
                     ?>
                     
                 </table>
