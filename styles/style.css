@@ -48,8 +48,12 @@ body{
     visibility: hidden;
 }
 .edit{
-    background-color:purple;
+    background-color:rgb(62, 136, 179);
     visibility: hidden;
+}
+.editdetails{
+    background-color:rgb(74, 107, 139);
+    margin-top: 20px;
 }
 .delete{
     background-color: rgb(140, 106, 231);
@@ -130,5 +134,29 @@ table td {
     height: 400px;
     border: 1px solid black;
     margin: 50px;
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
+}
+.border p
+{
+    padding:10px;
+}
+.border input.button
+{
+    margin: 10px;
+    width:80px;
+    height:30px;
+}
+.box button
+{
+    width:100px;
+    height:40px;
+}
+img.editimage
+{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    float: right;
+    padding-top: 60px;
+    padding-right: 60px;
 }

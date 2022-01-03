@@ -65,7 +65,7 @@
 
         <div class="add box" id="add">
             <div class = "border">
-                <form action="addStudent.php" method = "POST" enctype = "multipart/form-data">
+                <form action="addStudentValidate.php" method = "POST" enctype = "multipart/form-data">
                     <p>Student Name : <input type="text" name = "name"></p><br>
                     <p>Student Age : <input type="text" name = "age"></p><br>
                     <p>Student Address : <input type="text" name = "address"></p><br>
@@ -79,6 +79,42 @@
         </div>
 
         <div class="edit box" id="edit">
+            <table>
+                    <tr>
+                        <th>Student ID</th><th>Student Name</th><th>Student Age</th><th>Student Address</th><th>Image</th><th></th>
+                    </tr>
+                    <?php
+
+                       $sql = "SELECT * FROM student";
+                       $result = $conn->query($sql);
+
+                       if ($result -> num_rows > 0)
+                       {
+                           while($row = $result->fetch_assoc())
+                           {
+                                $id = $row['studentID'];
+                                $name = $row['studentName'];
+                                $age = $row['studentAge'];
+                                $address = $row['studentAddress'];
+                                $image = $row['imgLoc'];
+                               
+                                echo '<tr><td>'.$id.'</td><td>'.$name.'</td><td>'.$age.'</td><td>'.$address.'</td>';
+                                if ($image == NULL)
+                                {
+                                    echo '<td><h4>No<br>Image</h4></td>';
+                                }
+                                else
+                                {
+                                    echo'<td>';
+                                    echo'<img src="'.$image.'" alt="" style = "width:50px; height:50px; margin-top:5px;">';
+                                    echo'</td>';
+                                }
+                                
+                                echo '<td><a href="editStudent.php?id='.$id.'"><button class = "validate">Edit Student<br>Details</button></a></tr></td>';
+                           }
+                       }                   
+                    ?>
+                </table>
 
         </div>
 
@@ -114,7 +150,7 @@
                                     echo'</td>';
                                 }
                                 
-                                echo '<td><a href="deleteStudent.php?id='.$id.'"><button>Delete Student</button></a></tr></td>';
+                                echo '<td><a href="deleteStudent.php?id='.$id.'"><button class = "validate">Delete Student</button></a></tr></td>';
                            }
                        }                   
                     ?>
