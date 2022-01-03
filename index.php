@@ -61,14 +61,21 @@
                            }
                        }                   
                     ?>
-                    
                 </table>
-                
-                
-
         </div>
 
         <div class="add box" id="add">
+            <div class = "border">
+                <form action="addStudent.php" method = "POST" enctype = "multipart/form-data">
+                    <p>Student Name : <input type="text" name = "name"></p><br>
+                    <p>Student Age : <input type="text" name = "age"></p><br>
+                    <p>Student Address : <input type="text" name = "address"></p><br>
+                    <p>Student Image : <input type="file" name = "image"></p><br>
+
+                    <input type="submit" value = "Add Details" class = "button">
+                </form>
+
+            </div>
 
         </div>
 
