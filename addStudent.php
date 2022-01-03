@@ -32,12 +32,12 @@
     if($conn->query($sql))
     {
         echo "done";
-        header("Location:index.php?status=passed");
+        header("Location:index.php?status=pass");
     }
     else
     {
         echo "Error";
-        header("Location:index.php?status=failed");
+        header("Location:index.php?status=fail");
     }
 
 

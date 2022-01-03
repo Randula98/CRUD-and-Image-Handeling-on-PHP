@@ -9,7 +9,7 @@ body{
 }
 .box{
     width: auto;
-    height: 500px;
+    height: auto;
     /* position: relative;
     float: left; */
     position: absolute;
@@ -52,8 +52,9 @@ body{
     visibility: hidden;
 }
 .delete{
-    background-color: blue;
+    background-color: rgb(140, 106, 231);
     visibility: hidden;
+    height: auto;
 }
 .search{
     background-color:orange;
