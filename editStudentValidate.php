@@ -55,5 +55,5 @@
         header("Location:index.php?status=fail");
     }
 
-
+    $conn->$close();
 ?>
