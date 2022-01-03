@@ -6,10 +6,10 @@
 
 <p>🟢 CRUD Operatos are using for the basic Web Development Methods</p><br>
 
-<h1>C</h1><h3>reate<h3>
-<h1>R</h1><h3>ead<h3>
-<h1>U</h1><h3>pdate<h3>
-<h1>D</h1><h3>elete<h3>
+<h1>C<h3>reate<h3></h1>
+<h1>R<h3>ead<h3></h1>
+<h1>U<h3>pdate<h3></h1>
+<h1>D<h3>elete<h3></h1>
 
 
 
