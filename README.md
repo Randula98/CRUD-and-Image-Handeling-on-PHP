@@ -13,7 +13,7 @@
 
 #
 
-<p>🟢 In this repository, You can get a basic idea about the CRUD Operations</p>
-<p>🟢 In addition, The Search Function and the Image Handeling Process is available</p>
+<p>🟢 In this repository, You can get a basic idea about the CRUD Operations 💡</p>
+<p>🟢 In addition, The Search Function and the Image Handeling Process is available 😇</p>
 
 #
