@@ -113,10 +113,8 @@
                                     echo'<img src="'.$image.'" alt="" style = "width:50px; height:50px; margin-top:5px;">';
                                     echo'</td>';
                                 }
-
+                                
                                 echo '<td><a href="deleteStudent.php?id='.$id.'"><button>Delete Student</button></a></tr></td>';
-
-
                            }
                        }                   
                     ?>
@@ -133,6 +131,4 @@
 
 </html>
 
-
-<!-- <button>Delete Student</button> -->
 
