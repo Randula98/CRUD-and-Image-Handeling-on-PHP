@@ -71,7 +71,8 @@
                     <p>Student Address : <input type="text" name = "address"></p><br>
                     <p>Student Image : <input type="file" name = "image"></p><br>
 
-                    <input type="submit" value = "Add Details" class = "button">
+                    <input type = "submit" value = "Add Details" class = "button">
+                    <input type =  "reset" value = "Reset" class = "button">
                 </form>
 
             </div>
@@ -159,6 +160,15 @@
         </div>
 
         <div class="search box" id="search">
+            <div class = "searchform">
+                <form action="searchResults.php" method = "POST">
+                    <p>Enter Student Name : <input type="text" name = "name" required></p><br>
+
+                    <input type = "submit" value = "Search" class = "button">
+                    <input type = "reset" value = "Reset" class = "button">
+                </form>
+
+            </div>
 
         </div>
 

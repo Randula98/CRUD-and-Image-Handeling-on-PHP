@@ -131,16 +131,16 @@ table td {
 .border
 {
     width: 800px;
-    height: 400px;
+    height: 300px;
     border: 1px solid black;
     margin: 50px;
     /* margin-bottom: 0px; */
 }
-.border p
+.border p , .searchform p
 {
     padding:10px;
 }
-.border input.button
+.border input.button , .searchform input.button
 {
     margin: 10px;
     width:80px;
@@ -159,4 +159,16 @@ img.editimage
     float: right;
     padding-top: 60px;
     padding-right: 60px;
+}
+
+.searchform
+{
+    width: 700px;
+    height: 150px;
+    border: 1px solid black;
+    margin: 50px;
+}
+.results .border
+{
+    height: auto;
 }
